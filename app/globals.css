@@ -1580,7 +1580,7 @@ main {
 /* LUNASSA homepage hero image replacement */
 .full-campaign-hero-bg,
 .luxury-hero-image {
-  background-image: url('/images/lunassa-home-hero.jpg') !important;
+  background-image: url('/images/lunassa-home-hero.jpg.jpg') !important;
   background-size: cover !important;
   background-position: center center !important;
   background-repeat: no-repeat !important;
