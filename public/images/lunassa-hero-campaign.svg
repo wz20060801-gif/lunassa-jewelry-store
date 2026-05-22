@@ -1,0 +1,26 @@
+<svg width="1920" height="1180" viewBox="0 0 1920 1180" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1920" height="1180" fill="#EDE6D8"/>
+  <radialGradient id="bg" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(1030 505) rotate(102) scale(650 890)">
+    <stop stop-color="#FDF9EF"/>
+    <stop offset="0.48" stop-color="#D6C8B2"/>
+    <stop offset="1" stop-color="#88785F"/>
+  </radialGradient>
+  <rect width="1920" height="1180" fill="url(#bg)"/>
+  <path d="M1275 195C1178 143 1032 126 921 181C809 236 765 342 740 471C715 600 579 670 586 795C594 951 797 1030 1002 1018C1206 1006 1404 918 1450 768C1496 618 1403 264 1275 195Z" fill="#F7EFE0" fill-opacity="0.62"/>
+  <path d="M960 236C807 238 685 365 687 523C690 680 813 803 965 801C1118 799 1240 673 1238 515C1235 358 1112 234 960 236Z" fill="#D6C6A6" fill-opacity="0.28"/>
+  <path d="M969 300C831 300 719 414 719 554C719 695 831 808 969 808C1107 808 1219 695 1219 554C1219 414 1107 300 969 300Z" stroke="#C8A96A" stroke-opacity="0.55" stroke-width="3"/>
+  <path d="M784 510C816 417 887 365 964 365C1043 365 1117 421 1147 520" stroke="#252018" stroke-width="10" stroke-linecap="round"/>
+  <circle cx="966" cy="641" r="132" fill="#6F9D86" fill-opacity="0.9"/>
+  <circle cx="966" cy="641" r="116" fill="#9DBEAB"/>
+  <circle cx="921" cy="594" r="26" fill="white" fill-opacity="0.75"/>
+  <circle cx="966" cy="641" r="139" stroke="white" stroke-opacity="0.65" stroke-width="9"/>
+  <g opacity="0.72">
+    <circle cx="802" cy="534" r="12" fill="#F5E8BF"/>
+    <circle cx="1133" cy="535" r="12" fill="#F5E8BF"/>
+    <circle cx="818" cy="497" r="8" fill="white"/>
+    <circle cx="1115" cy="497" r="8" fill="white"/>
+  </g>
+  <path d="M210 961C441 850 584 792 767 793C959 794 1111 888 1299 878C1467 870 1592 780 1710 669" stroke="#111111" stroke-opacity="0.1" stroke-width="2"/>
+  <path d="M116 240C296 314 484 321 630 274" stroke="#C8A96A" stroke-opacity="0.24" stroke-width="2"/>
+  <path d="M1320 215C1510 240 1640 335 1748 489" stroke="#C8A96A" stroke-opacity="0.28" stroke-width="2"/>
+</svg>
