@@ -1577,3 +1577,11 @@ main {
     width: min(320px, 100%);
   }
 }
+/* LUNASSA homepage hero image replacement */
+.full-campaign-hero-bg,
+.luxury-hero-image {
+  background-image: url('/images/lunassa-home-hero.jpg') !important;
+  background-size: cover !important;
+  background-position: center center !important;
+  background-repeat: no-repeat !important;
+}
