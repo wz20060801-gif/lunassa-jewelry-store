@@ -1585,3 +1585,113 @@ main {
   background-position: center center !important;
   background-repeat: no-repeat !important;
 }
+/* ===== LUNASSA Hero: move text to bottom-left like luxury brand campaign ===== */
+
+.luxury-hero {
+  position: relative !important;
+  min-height: 100vh !important;
+  overflow: hidden !important;
+}
+
+.luxury-hero-image {
+  position: absolute !important;
+  inset: 0 !important;
+  background-image: url('/images/lunassa-home-hero.jpg.jpg') !important;
+  background-size: cover !important;
+  background-position: center center !important;
+  background-repeat: no-repeat !important;
+  z-index: 0 !important;
+}
+
+.luxury-hero-overlay {
+  position: absolute !important;
+  inset: 0 !important;
+  background: linear-gradient(
+    to top,
+    rgba(0, 0, 0, 0.62) 0%,
+    rgba(0, 0, 0, 0.36) 28%,
+    rgba(0, 0, 0, 0.08) 58%,
+    rgba(0, 0, 0, 0) 100%
+  ) !important;
+  z-index: 1 !important;
+}
+
+.luxury-hero-content {
+  position: absolute !important;
+  left: 56px !important;
+  bottom: 54px !important;
+  top: auto !important;
+  right: auto !important;
+  transform: none !important;
+  width: auto !important;
+  max-width: 620px !important;
+  text-align: left !important;
+  color: #ffffff !important;
+  z-index: 2 !important;
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: flex-start !important;
+  justify-content: flex-end !important;
+}
+
+.luxury-hero-content .hero-kicker {
+  margin-bottom: 14px !important;
+  font-size: 13px !important;
+  letter-spacing: 0.22em !important;
+  text-transform: uppercase !important;
+  color: #ffffff !important;
+}
+
+.luxury-hero-content h1 {
+  margin: 0 0 18px !important;
+  font-family: "Cormorant Garamond", "Playfair Display", serif !important;
+  font-size: clamp(58px, 8vw, 118px) !important;
+  line-height: 0.9 !important;
+  font-weight: 600 !important;
+  color: #ffffff !important;
+  text-align: left !important;
+}
+
+.luxury-hero-content p {
+  margin: 0 0 26px !important;
+  max-width: 520px !important;
+  font-size: 18px !important;
+  line-height: 1.6 !important;
+  color: #ffffff !important;
+  text-align: left !important;
+}
+
+.luxury-hero-actions {
+  display: flex !important;
+  justify-content: flex-start !important;
+  align-items: center !important;
+  gap: 16px !important;
+  flex-wrap: wrap !important;
+}
+
+@media (max-width: 768px) {
+  .luxury-hero-content {
+    left: 24px !important;
+    right: 24px !important;
+    bottom: 32px !important;
+    max-width: none !important;
+  }
+
+  .luxury-hero-content h1 {
+    font-size: clamp(42px, 15vw, 72px) !important;
+  }
+
+  .luxury-hero-content p {
+    font-size: 15px !important;
+  }
+
+  .luxury-hero-actions {
+    width: 100% !important;
+  }
+
+  .hero-white-button,
+  .hero-line-button {
+    width: 100% !important;
+    text-align: center !important;
+  }
+}
