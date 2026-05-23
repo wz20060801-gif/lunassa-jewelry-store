@@ -18,6 +18,7 @@ export type Product = {
   reviewCount: number;
   label: ProductLabel;
   imageTone: 'jade' | 'pearl' | 'gold' | 'onyx' | 'rose' | 'silver';
+  images?: string[];
   short: string;
   story: string;
   specs: {
