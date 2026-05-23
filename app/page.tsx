@@ -49,9 +49,9 @@ export default function HomePage() {
 
       <section className="luxury-intro">
         <p className="eyebrow">Cultural jewelry for global women</p>
-        <h2>Inspired by the ebb and flow of moonlight, LUNASSA captures the interplay of light, jade and refined cultural elegance.</h2>
+        <h2>One-of-a-Kind Jade. One-of-a-Kind Soul.</h2>
         <p>
-          In a state of dynamic transformation, LUNASSA’s creations embody modern craftsmanship, superior materials and a slow luxury rhythm.
+          Mindfully crafted jewelry woven with natural healing energy and timeless stories. Wear your sanctuary.
         </p>
       </section>
 
@@ -86,9 +86,9 @@ export default function HomePage() {
         <div className="story-campaign-image" />
         <div className="story-campaign-copy">
           <p className="eyebrow">LUNASSA signature</p>
-          <h2>THE SELF-TIDE COLLECTION</h2>
+          <h2>Carved by Time. Refined by Hands.</h2>
           <p>
-            Moonlit blue stones, silver settings and quiet tide-like movement create a modern series for women who define elegance in their own rhythm.
+           Every piece of Lumessa is a conversation between raw earth and tireless hands. No two natural Jades are alike; no two cuts are identical. We don’t mass-produce—we manifest.
           </p>
           <Link className="hero-white-button dark-text" href="/series/self-tide">Shop the Collection</Link>
         </div>
@@ -117,9 +117,9 @@ export default function HomePage() {
       <section className="brand-strip luxury-brand-strip">
         <div>
           <p className="eyebrow">Brand story</p>
-          <h2>把东方文化，做成日常可以佩戴的轻奢珠宝</h2>
+          <h2>Turn Eastern culture into everyday wearable luxury jewelry. Turn Eastern culture into everyday wearable luxury jewelry.</h2>
         </div>
-        <p>LUNASSA 提取“月、玉、水、祝福”等东方意象，转化成更适合海外消费者理解和佩戴的现代珠宝语言。</p>
+        <p>LUNASSA extracts Eastern imagery such as 'moon, jade, water, and blessings,' transforming them into a modern jewelry language that is more suitable for overseas consumers to understand and wear.</p>
         <Link className="outline-button" href="/story">Read More</Link>
       </section>
 
