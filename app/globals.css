@@ -2003,3 +2003,52 @@ main {
     text-align: center !important;
   }
 }
+/* ===== Fix series dropdown hover gap ===== */
+
+.nav-dropdown {
+  position: relative !important;
+  display: inline-flex !important;
+  align-items: center !important;
+  padding: 16px 0 !important;
+}
+
+.nav-dropdown-button {
+  border: 0 !important;
+  background: transparent !important;
+  color: inherit !important;
+  font: inherit !important;
+  cursor: pointer !important;
+}
+
+.nav-dropdown-menu {
+  position: absolute !important;
+  top: 100% !important;
+  left: 50% !important;
+  transform: translateX(-50%) !important;
+  min-width: 280px !important;
+  background: rgba(248, 245, 239, 0.98) !important;
+  border: 1px solid rgba(200, 169, 106, 0.35) !important;
+  box-shadow: 0 18px 50px rgba(17, 17, 17, 0.14) !important;
+  padding: 14px !important;
+  border-radius: 18px !important;
+  z-index: 999 !important;
+  display: none !important;
+}
+
+/* 鼠标移到 series 或菜单区域时，都保持显示 */
+.nav-dropdown:hover .nav-dropdown-menu,
+.nav-dropdown-open .nav-dropdown-menu,
+.nav-dropdown-menu:hover {
+  display: grid !important;
+  gap: 10px !important;
+}
+
+.nav-dropdown-menu a {
+  padding: 12px 14px !important;
+  border-radius: 12px !important;
+  white-space: nowrap !important;
+}
+
+.nav-dropdown-menu a:hover {
+  background: rgba(200, 169, 106, 0.14) !important;
+}
