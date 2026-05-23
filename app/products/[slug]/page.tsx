@@ -38,9 +38,9 @@ export default async function ProductDetailPage({ params }: ProductDetailPagePro
         <div className="detail-gallery">
           <ProductImage product={product} large imageIndex={0} />
           <div className="thumb-row">
-            {(product.images?.slice(0, 3) ?? [undefined, undefined, undefined]).map((_, index) => (
-              <ProductImage key={index} product={product} imageIndex={index} label={index === 0 ? 'Front' : index === 1 ? 'Detail' : 'Angle'} />
-            ))}
+            <ProductImage product={product} label="Front" imageIndex={0} />
+            <ProductImage product={product} label="Detail" imageIndex={1} />
+            <ProductImage product={product} label="Worn" imageIndex={2} />
           </div>
         </div>
         <div className="detail-info">
@@ -81,7 +81,7 @@ export default async function ProductDetailPage({ params }: ProductDetailPagePro
           <h2>What customers say</h2>
         </div>
         <div className="review-grid">
-          <article><strong>★★★★★</strong><p>“The packaging feels premium and the green stone looks very elegant in daylight.”</p><span>— Amelia, Singapore</span></article>
+          <article><strong>★★★★★</strong><p>“The packaging feels premium and the stone looks very elegant in daylight.”</p><span>— Amelia, Singapore</span></article>
           <article><strong>★★★★★</strong><p>“Bought it as a birthday gift. The cultural story card made it feel more meaningful.”</p><span>— Chloe, Canada</span></article>
           <article><strong>★★★★☆</strong><p>“Easy to match with work outfits. I like that it is not too flashy.”</p><span>— Mia, Australia</span></article>
         </div>

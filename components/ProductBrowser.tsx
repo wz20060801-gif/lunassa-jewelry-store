@@ -3,7 +3,6 @@
 import { useMemo, useState } from 'react';
 import { products, type Product, type ProductCategory } from '@/data/products';
 import { ProductCard } from './ProductCard';
-import { ProductImage } from './ProductImage';
 
 type ProductBrowserProps = {
   category?: ProductCategory | 'gifts' | 'new-arrivals';
@@ -11,8 +10,8 @@ type ProductBrowserProps = {
   title?: string;
 };
 
-const materials = ['All', 'Silver alloy', '18K gold-plated', 'Pearl', 'Zircon', 'Green jade'];
-const colors = ['All', 'Jade green', 'Champagne gold', 'Silver', 'Pearl white', 'Rose gold', 'Ink black'];
+const materials = ['All', 'Silver alloy', 'Zircon', 'Blue stone', 'Green jade'];
+const colors = ['All', 'Moonlit blue', 'Azure blue', 'Ice blue', 'Soft jade green', 'Deep jade green', 'Silver'];
 const scenes = ['All', 'gift', 'birthday', 'commute', 'date', 'ceremony'];
 
 type SortKey = 'featured' | 'price-low' | 'price-high' | 'rating';
@@ -31,7 +30,7 @@ export function ProductBrowser({ category, query = '', title }: ProductBrowserPr
 
     let items = [...products];
     if (category === 'gifts') items = items.filter((product) => product.scene.includes('gift') || product.label === 'Gift Pick');
-    if (category === 'new-arrivals') items = items.filter((product) => product.label === 'New' || product.label === 'Limited');
+    if (category === 'new-arrivals') items = items.filter((product) => product.label === 'New' || product.label === 'Limited' || product.label === 'Bestseller' || product.label === 'Gift Pick');
     if (category && category !== 'gifts' && category !== 'new-arrivals') {
       items = items.filter((product) => product.category === category);
     }
@@ -112,23 +111,13 @@ export function ProductBrowser({ category, query = '', title }: ProductBrowserPr
 
         <div className="product-flow">
           <div className="product-grid">
-            {filtered.slice(0, visible).map((product, index) => (
+            {filtered.slice(0, visible).map((product) => (
               <div key={product.id}>
-                {index === 4 && (
-                  <div className="inline-brand-card">
-                    <ProductImage tone="jade" label="Green Stone Collection" />
-                    <div>
-                      <p className="eyebrow">Series story</p>
-                      <h3>Quiet jade tone, modern global styling</h3>
-                      <p>绿色并不只是装饰色，它代表东方审美中的温润、克制与祝福感。LUNASSA 将传统玉石意象转化为适合海外消费者日常佩戴的轻奢首饰。</p>
-                    </div>
-                  </div>
-                )}
                 <ProductCard product={product} />
               </div>
             ))}
           </div>
-          {filtered.length === 0 && <p className="empty-state">No product found. Try another keyword or reset filters.</p>}
+          {filtered.length === 0 && <p className="empty-state">No products are available in this collection yet.</p>}
           {visible < filtered.length && (
             <button className="see-more" onClick={() => setVisible((value) => value + 4)}>See More</button>
           )}

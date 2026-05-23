@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 import './globals.css';
+import './lunassa-updates.css';
 import { CartProvider } from '@/components/CartContext';
 import { Header } from '@/components/Header';
 import { Footer } from '@/components/Footer';

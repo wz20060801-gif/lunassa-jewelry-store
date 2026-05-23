@@ -1,60 +1,36 @@
 'use client';
 
-import { FormEvent, useState } from 'react';
-import Link from 'next/link';
-
 export default function ContactPage() {
-  const [status, setStatus] = useState('');
   const whatsappNumber = process.env.NEXT_PUBLIC_WHATSAPP_NUMBER || '85200000000';
   const email = process.env.NEXT_PUBLIC_SUPPORT_EMAIL || 'hello@lunassa.com';
-
-  async function submitContact(event: FormEvent<HTMLFormElement>) {
-    event.preventDefault();
-    const form = new FormData(event.currentTarget);
-    const response = await fetch('/api/contact', {
-      method: 'POST',
-      body: JSON.stringify(Object.fromEntries(form.entries()))
-    });
-    const data = await response.json();
-    if (data.ok) setStatus('Message saved in mock API. Connect email service such as Resend, SendGrid or Gmail SMTP before launch.');
-  }
+  const instagram = process.env.NEXT_PUBLIC_INSTAGRAM_URL || 'https://www.instagram.com/lunassa.jewelry';
 
   return (
     <main>
       <section className="page-hero compact-hero">
         <p className="eyebrow">Contact LUNASSA</p>
-        <h1>联系我们</h1>
-        <p>For product consultation, gift advice, wholesale inquiries or after-sales service.</p>
+        <h1>Contact Us</h1>
+        <p>Choose your preferred contact channel for product consultation, gift advice or after-sales support.</p>
       </section>
 
-      <section className="contact-layout">
-        <div className="contact-cards">
+      <section className="contact-layout contact-simple-layout">
+        <div className="contact-cards contact-three-cards">
           <article>
             <h2>WhatsApp</h2>
             <p>Fast product consultation and gift advice.</p>
-            <a className="primary-button" href={`https://wa.me/${whatsappNumber}?text=${encodeURIComponent('Hello LUNASSA, I need help choosing jewelry.')}`} target="_blank" rel="noreferrer">WhatsApp Us</a>
+            <a className="primary-button" href={`https://wa.me/${whatsappNumber}?text=${encodeURIComponent('Hello LUNASSA, I need help choosing jewelry.')}`} target="_blank" rel="noreferrer">WhatsApp</a>
           </article>
           <article>
-            <h2>Email</h2>
+            <h2>Emile</h2>
             <p>{email}</p>
-            <a className="outline-button" href={`mailto:${email}`}>Send Email</a>
+            <a className="outline-button" href={`mailto:${email}`}>Emile</a>
           </article>
           <article>
-            <h2>Appointment</h2>
-            <p>Book a 1:1 styling consultation before gifting.</p>
-            <Link className="outline-button" href="/appointment">预约咨询</Link>
+            <h2>Instagram</h2>
+            <p>Follow LUNASSA campaigns, product launches and styling inspiration.</p>
+            <a className="outline-button" href={instagram} target="_blank" rel="noreferrer">Instagram</a>
           </article>
         </div>
-
-        <form className="contact-form" onSubmit={submitContact}>
-          <h2>Contact Form</h2>
-          <label>Name<input name="name" required /></label>
-          <label>Email<input type="email" name="email" required /></label>
-          <label>Topic<select name="topic"><option>Product question</option><option>Gift recommendation</option><option>After-sales</option><option>Wholesale</option></select></label>
-          <label>Message<textarea name="message" rows={5} required /></label>
-          <button className="black-button" type="submit">Submit</button>
-          {status && <p className="success-message">{status}</p>}
-        </form>
       </section>
     </main>
   );
