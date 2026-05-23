@@ -9,21 +9,21 @@ const editorialTiles = [
     cn: '新品系列',
     copy: 'Five new creations inspired by moonlight, water, jade and cultural elegance.',
     href: '/new-arrivals',
-    image: '/images/home-new-product.jpg'
+    image: '/images/home-new-product.jpeg'
   },
   {
     title: 'Necklace',
     cn: '项链',
     copy: 'Four refined necklaces with blue and green stone signatures.',
     href: '/necklaces',
-    image: '/images/home-necklace.jpg'
+    image: '/images/home-necklace.jpeg'
   },
   {
     title: 'Selected Gifts',
     cn: '礼物精选',
     copy: 'Gift-ready pieces with box, card and cultural story included.',
     href: '/gifts',
-    image: '/images/home-gifts.jpg'
+    image: '/images/home-gifts.jpeg'
   }
 ];
 
