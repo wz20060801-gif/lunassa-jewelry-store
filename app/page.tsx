@@ -37,7 +37,7 @@ export default function HomePage() {
         <div className="luxury-hero-image" />
         <div className="luxury-hero-overlay" />
         <div className="luxury-hero-content">
-          <p className="hero-kicker">LUNASSA HIGH JEWELRY · 东方月色珠宝</p>
+          <p className="hero-kicker">LUNASSA HIGH JEWELRY · Oriental Moonlight Jewelry</p>
           <h1>Moonlit Jade</h1>
           <p>Chinese cultural elegance, refined for women around the world.</p>
           <div className="luxury-hero-actions">
