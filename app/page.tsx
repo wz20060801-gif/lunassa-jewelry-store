@@ -49,9 +49,9 @@ export default function HomePage() {
 
       <section className="luxury-intro">
         <p className="eyebrow">Cultural jewelry for global women</p>
-        <h2>不是普通促销型电商，而是一个有品牌审美、系列故事和购买路径的珠宝官网。</h2>
+        <h2>nspired by the ebb and flow of moonlight, Lunassa captures the ever-changing interplay of light and shadow, creating timeless elegance. </h2>
         <p>
-          首页采用奢侈品官网常见的“大图先行”节奏：先建立高级感，再引导用户进入新品、系列、礼物精选、预约咨询与在线购买。
+          In a state of dynamic transformation, Lunassa’s creative masterpieces embody innovative craftsmanship and superior materials.
         </p>
       </section>
 
