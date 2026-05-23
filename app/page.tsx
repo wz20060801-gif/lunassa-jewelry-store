@@ -9,21 +9,21 @@ const editorialTiles = [
     cn: '新品系列',
     copy: 'Five new creations inspired by moonlight, water, jade and cultural elegance.',
     href: '/new-arrivals',
-    tone: 'silver' as const
+    image: '/images/home-new-product.jpg'
   },
   {
     title: 'Necklace',
     cn: '项链',
     copy: 'Four refined necklaces with blue and green stone signatures.',
     href: '/necklaces',
-    tone: 'jade' as const
+    image: '/images/home-necklace.jpg'
   },
   {
     title: 'Selected Gifts',
     cn: '礼物精选',
     copy: 'Gift-ready pieces with box, card and cultural story included.',
     href: '/gifts',
-    tone: 'pearl' as const
+    image: '/images/home-gifts.jpg'
   }
 ];
 
@@ -58,7 +58,7 @@ export default function HomePage() {
       <section className="editorial-row" aria-label="Featured entrances">
         {editorialTiles.map((tile) => (
           <Link key={tile.title} href={tile.href} className="editorial-tile">
-            <ProductImage tone={tile.tone} label={tile.title} />
+           <img className="editorial-tile-image" src={tile.image} alt={tile.title} />
             <div>
               <p>{tile.cn}</p>
               <h2>{tile.title}</h2>
@@ -172,4 +172,21 @@ export default function HomePage() {
       </section>
     </main>
   );
+}
+/* ===== Homepage three entrance card images ===== */
+
+.editorial-tile-image {
+  width: 100%;
+  height: 360px;
+  display: block;
+  object-fit: contain;
+  background: #ffffff;
+  padding: 24px;
+}
+
+@media (max-width: 768px) {
+  .editorial-tile-image {
+    height: 280px;
+    padding: 18px;
+  }
 }
