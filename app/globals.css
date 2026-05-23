@@ -1577,7 +1577,319 @@ main {
     width: min(320px, 100%);
   }
 }
-/* LUNASSA homepage hero image replacement */
+
+/* LUNASSA v2 full-width luxury homepage: unmistakable big campaign image */
+.bulgari-inspired-home {
+  background: var(--ivory);
+}
+
+.full-campaign-hero {
+  position: relative;
+  min-height: clamp(620px, 88vh, 920px);
+  display: grid;
+  place-items: end center;
+  isolation: isolate;
+  overflow: hidden;
+  background: #111;
+}
+
+.full-campaign-hero-bg {
+  position: absolute;
+  inset: 0;
+  z-index: -3;
+  background-image: url('/images/lunassa-full-hero.svg');
+  background-size: cover;
+  background-position: center;
+  transform: scale(1.01);
+}
+
+.full-campaign-hero-shade {
+  position: absolute;
+  inset: 0;
+  z-index: -2;
+  background:
+    linear-gradient(180deg, rgba(17,17,17,0.08) 0%, rgba(17,17,17,0.10) 48%, rgba(17,17,17,0.62) 100%),
+    linear-gradient(90deg, rgba(17,17,17,0.36) 0%, rgba(17,17,17,0.02) 45%, rgba(17,17,17,0.10) 100%);
+}
+
+.full-campaign-hero-copy {
+  width: min(920px, calc(100% - 36px));
+  margin: 0 auto clamp(48px, 8vh, 92px);
+  text-align: center;
+  color: white;
+  text-shadow: 0 10px 34px rgba(0,0,0,0.34);
+}
+
+.full-campaign-hero-copy p {
+  margin: 0 0 16px;
+  letter-spacing: 0.32em;
+  text-transform: uppercase;
+  font-size: clamp(11px, 1.2vw, 13px);
+  font-weight: 700;
+}
+
+.full-campaign-hero-copy h1 {
+  margin: 0;
+  font-family: 'Cormorant Garamond', 'Noto Serif SC', serif;
+  font-size: clamp(68px, 11vw, 152px);
+  line-height: 0.86;
+  letter-spacing: 0.03em;
+  font-weight: 700;
+}
+
+.full-campaign-hero-copy span {
+  display: block;
+  margin: 22px auto 0;
+  max-width: 620px;
+  font-family: 'Noto Serif SC', 'Cormorant Garamond', serif;
+  font-size: clamp(18px, 2.2vw, 26px);
+  line-height: 1.45;
+}
+
+.full-campaign-actions {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 14px;
+  margin-top: 30px;
+}
+
+.full-campaign-actions a {
+  min-width: 210px;
+  padding: 15px 28px;
+  border: 1px solid rgba(255,255,255,0.72);
+  background: rgba(255,255,255,0.92);
+  color: #111;
+  text-transform: uppercase;
+  letter-spacing: 0.13em;
+  font-size: 12px;
+  font-weight: 800;
+  transition: all 0.22s ease;
+}
+
+.full-campaign-actions a + a {
+  background: transparent;
+  color: white;
+}
+
+.full-campaign-actions a:hover {
+  transform: translateY(-2px);
+  background: #111;
+  color: white;
+  border-color: #111;
+}
+
+.compact-luxury-intro {
+  padding-top: clamp(64px, 8vw, 112px);
+}
+
+.category-runway {
+  width: min(1440px, calc(100% - 40px));
+  margin: 0 auto clamp(80px, 8vw, 120px);
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1px;
+  background: rgba(17,17,17,0.12);
+  border: 1px solid rgba(17,17,17,0.10);
+}
+
+.category-runway-card {
+  background: var(--ivory);
+  min-height: 470px;
+  padding: 26px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  text-align: center;
+  transition: all 0.24s ease;
+}
+
+.category-runway-card .product-image {
+  flex: 1;
+  margin-bottom: 26px;
+  min-height: 290px;
+}
+
+.category-runway-card p {
+  margin: 0 0 8px;
+  color: var(--jade-dark);
+  font-family: 'Noto Serif SC', serif;
+  letter-spacing: 0.16em;
+  font-size: 12px;
+}
+
+.category-runway-card h2 {
+  margin: 0;
+  font-family: 'Cormorant Garamond', 'Noto Serif SC', serif;
+  font-size: clamp(28px, 3vw, 42px);
+  letter-spacing: 0.04em;
+}
+
+.category-runway-card:hover {
+  background: #fff;
+  transform: translateY(-5px);
+  box-shadow: var(--shadow);
+}
+
+.double-campaign-grid {
+  width: min(1440px, calc(100% - 40px));
+  margin: 0 auto clamp(80px, 9vw, 140px);
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 22px;
+}
+
+.double-campaign-card {
+  position: relative;
+  min-height: 680px;
+  display: grid;
+  align-items: end;
+  overflow: hidden;
+  background: #efe6d8;
+}
+
+.double-campaign-card .product-image {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 0;
+}
+
+.double-campaign-card .product-image::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, rgba(17,17,17,0) 0%, rgba(17,17,17,0.62) 100%);
+}
+
+.double-campaign-card > div {
+  position: relative;
+  z-index: 1;
+  color: white;
+  text-align: center;
+  padding: 42px 28px;
+  text-shadow: 0 12px 30px rgba(0,0,0,0.32);
+}
+
+.double-campaign-card p {
+  margin: 0 0 8px;
+  letter-spacing: 0.24em;
+  font-size: 12px;
+  text-transform: uppercase;
+}
+
+.double-campaign-card h2 {
+  margin: 0;
+  font-family: 'Cormorant Garamond', 'Noto Serif SC', serif;
+  font-size: clamp(42px, 5vw, 72px);
+  line-height: 0.95;
+}
+
+.double-campaign-card span {
+  display: block;
+  max-width: 460px;
+  margin: 16px auto 0;
+  line-height: 1.7;
+}
+
+.brand-story-cinematic {
+  width: min(1440px, calc(100% - 40px));
+  margin: clamp(70px, 9vw, 140px) auto;
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+  min-height: 640px;
+  background: #111;
+  color: white;
+}
+
+.brand-story-cinematic-image {
+  background-image: url('/images/lunassa-story-campaign.svg');
+  background-size: cover;
+  background-position: center;
+  min-height: 520px;
+}
+
+.brand-story-cinematic-copy {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: clamp(44px, 7vw, 96px);
+}
+
+.brand-story-cinematic-copy h2 {
+  margin: 0 0 20px;
+  font-family: 'Noto Serif SC', 'Cormorant Garamond', serif;
+  font-size: clamp(36px, 4.4vw, 72px);
+  line-height: 1.08;
+}
+
+.brand-story-cinematic-copy p:not(.eyebrow) {
+  color: rgba(255,255,255,0.74);
+  line-height: 2;
+  margin-bottom: 28px;
+}
+
+@media (max-width: 980px) {
+  .full-campaign-hero {
+    min-height: 720px;
+  }
+
+  .category-runway,
+  .double-campaign-grid,
+  .brand-story-cinematic {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .brand-story-cinematic {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 640px) {
+  .full-campaign-hero {
+    min-height: 640px;
+    place-items: end center;
+  }
+
+  .full-campaign-hero-copy {
+    margin-bottom: 42px;
+  }
+
+  .full-campaign-actions a {
+    width: 100%;
+  }
+
+  .category-runway,
+  .double-campaign-grid {
+    grid-template-columns: 1fr;
+    width: calc(100% - 28px);
+  }
+
+  .category-runway-card,
+  .double-campaign-card {
+    min-height: 520px;
+  }
+
+  .brand-story-cinematic {
+    width: calc(100% - 28px);
+  }
+}
+
+/* ===== Real product photos ===== */
+.real-product-photo {
+  background: #ffffff !important;
+}
+
+.real-product-photo img {
+  transition: transform 0.35s ease;
+}
+
+.product-card:hover .real-product-photo img {
+  transform: scale(1.035);
+}
+
+/* ===== LUNASSA homepage uploaded hero image replacement ===== */
 .full-campaign-hero-bg,
 .luxury-hero-image {
   background-image: url('/images/lunassa-home-hero.jpg.jpg') !important;
@@ -1585,8 +1897,8 @@ main {
   background-position: center center !important;
   background-repeat: no-repeat !important;
 }
-/* ===== LUNASSA Hero: move text to bottom-left like luxury brand campaign ===== */
 
+/* ===== LUNASSA Hero: move text to bottom-left like luxury brand campaign ===== */
 .luxury-hero {
   position: relative !important;
   min-height: 100vh !important;
@@ -1596,10 +1908,6 @@ main {
 .luxury-hero-image {
   position: absolute !important;
   inset: 0 !important;
-  background-image: url('/images/lunassa-home-hero.jpg.jpg') !important;
-  background-size: cover !important;
-  background-position: center center !important;
-  background-repeat: no-repeat !important;
   z-index: 0 !important;
 }
 

@@ -77,6 +77,134 @@ export const categoryMeta: Record<ProductCategory | 'new-arrivals' | 'gifts', {
 
 export const products: Product[] = [
   {
+    id: 'LUN-NE-101',
+    slug: 'moonlit-blue-halo-necklace',
+    name: 'Moonlit Blue Halo Necklace',
+    cnName: '月光蓝宝石镶钻项链',
+    category: 'necklaces',
+    collection: 'Moonlit Jade Collection',
+    material: 'Silver alloy / zircon / simulated blue gemstone',
+    color: 'Silver white + moonlit blue',
+    scene: ['gift', 'birthday', 'date'],
+    price: 49.9,
+    originalPrice: 79.9,
+    rating: 4.9,
+    reviewCount: 86,
+    label: 'New',
+    imageTone: 'silver',
+    images: [
+      '/images/products/moonlit-blue-halo-necklace-1.jpg',
+      '/images/products/moonlit-blue-halo-necklace-2.jpg',
+      '/images/products/moonlit-blue-halo-necklace-3.jpg'
+    ],
+    short: 'A luminous blue oval stone surrounded by sparkling zircon, designed for refined daily elegance.',
+    story: 'The oval blue centre stone is inspired by moonlight reflected on quiet water. Its cool tone and bright halo setting create a graceful piece for gifting and polished everyday styling.',
+    specs: {
+      material: 'Eco-friendly silver alloy, zircon, simulated blue gemstone',
+      color: 'Silver white and moonlit blue',
+      length: '40 + 5 cm extension chain',
+      crowd: 'Women / gifts / date styling / daily elegance',
+      packaging: 'LUNASSA gift box, polishing cloth, greeting card',
+      service: '7-day return and exchange, 30-day warranty'
+    }
+  },
+  {
+    id: 'LUN-BR-101',
+    slug: 'azure-halo-bracelet',
+    name: 'Azure Halo Bracelet',
+    cnName: '天蓝椭圆宝石镶钻手链',
+    category: 'bracelets',
+    collection: 'Moonlit Jade Collection',
+    material: 'Silver alloy / zircon / simulated blue gemstone',
+    color: 'Silver white + clear sky blue',
+    scene: ['gift', 'commute', 'date'],
+    price: 45.9,
+    originalPrice: 69.9,
+    rating: 4.8,
+    reviewCount: 73,
+    label: 'Gift Pick',
+    imageTone: 'silver',
+    images: [
+      '/images/products/azure-halo-bracelet-1.jpg',
+      '/images/products/azure-halo-bracelet-2.jpg',
+      '/images/products/azure-halo-bracelet-3.jpg'
+    ],
+    short: 'An elegant blue stone bracelet with a zircon halo and polished silver-tone bracelet links.',
+    story: 'This bracelet turns the softness of blue jade into a contemporary luxury silhouette. The oval stone sits at the centre, surrounded by delicate sparkle for a balanced, gift-ready look.',
+    specs: {
+      material: 'Eco-friendly silver alloy, zircon, simulated blue gemstone',
+      color: 'Silver white and clear sky blue',
+      length: '16–20 cm adjustable',
+      crowd: 'Women / birthday gift / commute / date styling',
+      packaging: 'LUNASSA gift box, polishing cloth, greeting card',
+      service: '7-day return and exchange, 30-day warranty'
+    }
+  },
+  {
+    id: 'LUN-NE-102',
+    slug: 'green-gourd-jade-necklace',
+    name: 'Green Gourd Jade Necklace',
+    cnName: '绿玉葫芦镶钻项链',
+    category: 'necklaces',
+    collection: 'Green Stone Collection',
+    material: 'Silver alloy / zircon / simulated green jade',
+    color: 'Silver white + vivid jade green',
+    scene: ['gift', 'birthday', 'ceremony'],
+    price: 52.9,
+    originalPrice: 82.9,
+    rating: 4.9,
+    reviewCount: 91,
+    label: 'Bestseller',
+    imageTone: 'jade',
+    images: [
+      '/images/products/green-gourd-jade-necklace-1.jpg',
+      '/images/products/green-gourd-jade-necklace-2.jpg',
+      '/images/products/green-gourd-jade-necklace-3.jpg'
+    ],
+    short: 'A symbolic gourd-shaped pendant with vivid green stone and bright zircon details.',
+    story: 'The gourd is a traditional symbol of blessing and abundance. LUNASSA refines the shape with a polished silver-tone frame and luminous green centre stone for modern cultural jewelry.',
+    specs: {
+      material: 'Eco-friendly silver alloy, zircon, simulated green jade',
+      color: 'Silver white and vivid jade green',
+      length: '40 + 5 cm extension chain',
+      crowd: 'Women / meaningful gift / birthday / ceremony',
+      packaging: 'LUNASSA gift box, polishing cloth, greeting card',
+      service: '7-day return and exchange, 30-day warranty'
+    }
+  },
+  {
+    id: 'LUN-NE-103',
+    slug: 'blue-cloud-tablet-necklace',
+    name: 'Blue Cloud Tablet Necklace',
+    cnName: '冰蓝九珠方牌项链',
+    category: 'necklaces',
+    collection: 'Moonlit Jade Collection',
+    material: 'Silver alloy / zircon / simulated blue gemstone',
+    color: 'Silver white + ice blue',
+    scene: ['gift', 'commute', 'ceremony'],
+    price: 46.9,
+    originalPrice: 72.9,
+    rating: 4.8,
+    reviewCount: 68,
+    label: 'Limited',
+    imageTone: 'silver',
+    images: [
+      '/images/products/blue-cloud-tablet-necklace-1.jpg',
+      '/images/products/blue-cloud-tablet-necklace-2.jpg',
+      '/images/products/blue-cloud-tablet-necklace-3.jpg'
+    ],
+    short: 'A rectangular pendant with nine soft blue cabochon stones and a bright zircon frame.',
+    story: 'The tablet silhouette is inspired by traditional plaques and blessing cards, reworked as a polished modern pendant with ice-blue gemstone rhythm.',
+    specs: {
+      material: 'Eco-friendly silver alloy, zircon, simulated blue gemstone',
+      color: 'Silver white and ice blue',
+      length: '40 + 5 cm extension chain',
+      crowd: 'Women / gifts / daily commute / elegant occasions',
+      packaging: 'LUNASSA gift box, polishing cloth, greeting card',
+      service: '7-day return and exchange, 30-day warranty'
+    }
+  },
+  {
     id: 'LUN-BR-001',
     slug: 'oval-green-jade-bracelet',
     name: 'Oval Green Jade Bracelet',

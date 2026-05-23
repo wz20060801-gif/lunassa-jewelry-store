@@ -36,11 +36,11 @@ export default async function ProductDetailPage({ params }: ProductDetailPagePro
     <main>
       <section className="product-detail-layout">
         <div className="detail-gallery">
-          <ProductImage product={product} large />
+          <ProductImage product={product} large imageIndex={0} />
           <div className="thumb-row">
-            <ProductImage product={product} label="Front" />
-            <ProductImage product={product} label="Detail" />
-            <ProductImage product={product} label="Packaging" />
+            {(product.images?.slice(0, 3) ?? [undefined, undefined, undefined]).map((_, index) => (
+              <ProductImage key={index} product={product} imageIndex={index} label={index === 0 ? 'Front' : index === 1 ? 'Detail' : 'Angle'} />
+            ))}
           </div>
         </div>
         <div className="detail-info">
