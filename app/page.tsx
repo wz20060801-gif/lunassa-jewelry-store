@@ -117,7 +117,7 @@ export default function HomePage() {
       <section className="brand-strip luxury-brand-strip">
         <div>
           <p className="eyebrow">Brand story</p>
-          <h2>Turn Eastern culture into everyday wearable luxury jewelry. Turn Eastern culture into everyday wearable luxury jewelry.</h2>
+          <h2>Turn Eastern culture into everyday wearable luxury jewelry.</h2>
         </div>
         <p>LUNASSA extracts Eastern imagery such as 'moon, jade, water, and blessings,' transforming them into a modern jewelry language that is more suitable for overseas consumers to understand and wear.</p>
         <Link className="outline-button" href="/story">Read More</Link>
