@@ -173,20 +173,3 @@ export default function HomePage() {
     </main>
   );
 }
-/* ===== Homepage three entrance card images ===== */
-
-.editorial-tile-image {
-  width: 100%;
-  height: 360px;
-  display: block;
-  object-fit: contain;
-  background: #ffffff;
-  padding: 24px;
-}
-
-@media (max-width: 768px) {
-  .editorial-tile-image {
-    height: 280px;
-    padding: 18px;
-  }
-}
