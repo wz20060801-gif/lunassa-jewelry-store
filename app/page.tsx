@@ -29,7 +29,7 @@ const collectionImages = [
   '/images/home-new-product.jpeg',
   '/images/home-necklace.jpeg',
   '/images/home-gifts.jpeg',
-  '/images/productspublicimageslunassa-brand-story.jpg'
+  '/images/green-gourd-jade-necklace-1.jpg'
 ] as const;
 export default function HomePage() {
   const newArrivals = products.slice(0, 5);
