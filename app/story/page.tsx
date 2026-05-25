@@ -1,5 +1,4 @@
 import Link from 'next/link';
-import { ProductImage } from '@/components/ProductImage';
 
 export default function StoryPage() {
   return (
@@ -11,7 +10,18 @@ export default function StoryPage() {
           <p>We translate Chinese cultural symbols into wearable jewelry for global women: quiet, refined, meaningful and never over-decorated.</p>
           <Link className="primary-button" href="/new-arrivals">Shop the story</Link>
         </div>
-        <ProductImage tone="jade" label="Moon · Jade · Cloud" large />
+       <img
+  src="/images/publicimageslunassa-brand-story.jpg"
+  alt="LUNASSA Jewelry Brand Story"
+  style={{
+    width: '100%',
+    height: 'clamp(430px, 55vw, 670px)',
+    objectFit: 'cover',
+    display: 'block',
+    borderRadius: '34px',
+    background: '#f7f5f0'
+  }}
+/>
       </section>
 
       <section className="story-grid">
