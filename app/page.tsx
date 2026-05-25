@@ -1,7 +1,6 @@
 import Link from 'next/link';
 import { collections, products } from '@/data/products';
 import { ProductCard } from '@/components/ProductCard';
-import { ProductImage } from '@/components/ProductImage';
 
 const editorialTiles = [
   {
@@ -26,7 +25,12 @@ const editorialTiles = [
     image: '/images/home-gifts.jpeg'
   }
 ];
-
+const collectionImages = [
+  '/images/home-new-product.jpeg',
+  '/images/home-necklace.jpeg',
+  '/images/home-gifts.jpeg',
+  '/images/productspublicimageslunassa-brand-story.jpeg'
+] as const;
 export default function HomePage() {
   const newArrivals = products.slice(0, 5);
   const bestSellers = products.filter((product) => product.label === 'Bestseller' || product.label === 'Gift Pick').slice(0, 4);
@@ -101,9 +105,20 @@ export default function HomePage() {
           <p>Two cultural jewelry series with distinct visual atmospheres: fluid blue self-expression and grounded green blessing.</p>
         </div>
         <div className="collection-grid">
-          {collections.map((collection) => (
+         {collections.map((collection, index) => (
             <Link key={collection.title} href={collection.href} className="collection-card">
-              <ProductImage tone={collection.tone} label={collection.title} />
+             <img
+  src={collectionImages[index]}
+  alt={collection.title}
+  style={{
+    width: '100%',
+    height: '260px',
+    objectFit: 'cover',
+    display: 'block',
+    borderRadius: '24px',
+    background: '#f7f5f0'
+  }}
+/>
               <div>
                 <p>{collection.cnTitle}</p>
                 <h3>{collection.title}</h3>
