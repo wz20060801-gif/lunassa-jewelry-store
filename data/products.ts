@@ -95,9 +95,9 @@ export const products: Product[] = [
     reviewCount: 168,
     label: 'New',
     imageTone: 'silver',
-    images: ['/images/products/moonlit-blue-halo-necklace-1.jpeg'],
+    images: ['azure-halo-bracelet-1.jpg'，'azure-halo-bracelet2-.jpg'],
     short: 'A luminous blue centre stone framed by sparkling zircon, created for refined everyday elegance.',
-    story: 'Inspired by moonlight reflected on a quiet tide, the blue halo pendant gives a calm, fluid and feminine impression.',
+    story: 'In a world that never stops talking, your silence can do the screaming. The Serene Tide bracelet is a love letter to the woman who has a storm of ambition inside her, but chooses to hold it in a nest of calm.',
     specs: {
       material: 'Eco-friendly silver alloy, zircon, simulated blue moonstone',
       color: 'Silver white and moonlit blue',
@@ -125,8 +125,8 @@ export const products: Product[] = [
     label: 'New',
     imageTone: 'silver',
     images: [
-      '/images/products/azure-halo-bracelet-1.jpeg',
-      '/images/products/azure-halo-bracelet-2.jpeg'
+      'azure-halo-bracelet-3.jpg',
+      'azure-halo-bracelet-4.jpg'
     ],
     short: 'An oval blue stone bracelet with delicate zircon links and a graceful polished finish.',
     story: 'The bracelet captures the softness of water and the circular rhythm of tides, giving the wrist a quiet luminous accent.',
