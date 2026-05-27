@@ -231,17 +231,16 @@ export const products: Product[] = [
       '/images/products/green-gourd-jade-necklace-2.jpeg',
       '/images/products/green-gourd-jade-necklace-3.jpeg'
     ],
-    short: 'A sculptural gourd-shaped pendant with deep green jade tone and refined zircon sparkle.',
-   story: "You are not a vessel to be filled by society's standards. You are the river that carves its own valley. The Infinite Becoming necklace celebrates the beauty of a woman who refuses to be finished.",
-
-    specs: {
-      material: 'Eco-friendly silver alloy, zircon, simulated green jade',
-      color: 'Silver white and deep jade green',
-      length: '42 + 5 cm extension chain',
-      crowd: 'Women / meaningful gift / date styling',
-      packaging: 'LUNASSA gift box, polishing cloth, greeting card',
-      service: '7-day return and exchange, 30-day warranty'
-    }
+short: 'A sculptural gourd-shaped pendant with deep green jade tone and refined zircon sparkle.',
+story: "You are not a vessel to be filled by society's standards. You are the river that carves its own valley. The Infinite Becoming necklace celebrates the beauty of a woman who refuses to be finished.",
+specs: {
+  material: 'Eco-friendly silver alloy, zircon, simulated green jade',
+  color: 'Silver white and deep jade green',
+  length: '42 + 5 cm extension chain',
+  crowd: 'Women / meaningful gift / date styling',
+  packaging: 'LUNASSA gift box, polishing cloth, greeting card',
+  service: '7-day return and exchange, 30-day warranty'
+}
   }
 ];
 
