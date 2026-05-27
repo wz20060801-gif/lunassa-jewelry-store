@@ -98,7 +98,8 @@ export const products: Product[] = [
     images: ['azure-halo-bracelet-1.jpeg'，
              'azure-halo-bracelet2-.jpeg'],
     short: 'A luminous blue centre stone framed by sparkling zircon, created for refined everyday elegance.',
-    story: 'In a world that never stops talking, your silence can do the screaming. The Serene Tide bracelet is a love letter to the woman who has a storm of ambition inside her, but chooses to hold it in a nest of calm.',
+    story: 'You don`t need to borrow anyone else`s light. Designed to sit right above your heart, the Ocean Heartbeat necklace is a visual rebellion against self-doubt and the pressure to perform.',
+    
     specs: {
       material: 'Eco-friendly silver alloy, zircon, simulated blue moonstone',
       color: 'Silver white and moonlit blue',
@@ -112,7 +113,7 @@ export const products: Product[] = [
     id: 'LUN-BR-101',
     slug: 'azure-halo-bracelet',
     name: 'Azure Halo Bracelet',
-    cnName: '天蓝椭圆宝石镶钻手链',
+    cnName: ' 「Serene Tide」 Bracelet',
     category: 'bracelets',
     collection: 'THE SELF-TIDE COLLECTION',
     series: 'self-tide',
@@ -130,7 +131,7 @@ export const products: Product[] = [
       'azure-halo-bracelet-4.jpeg'
     ],
     short: 'An oval blue stone bracelet with delicate zircon links and a graceful polished finish.',
-    story: 'The bracelet captures the softness of water and the circular rhythm of tides, giving the wrist a quiet luminous accent.',
+    story: 'In a world that never stops talking, your silence can do the screaming.The Serene Tide bracelet is a love letter to the woman who has a storm of ambition inside her, but chooses to hold it in a nest of calm.',
     specs: {
       material: 'Eco-friendly silver alloy, zircon, simulated blue jade',
       color: 'Silver white and azure blue',
@@ -163,7 +164,7 @@ export const products: Product[] = [
       '/images/products/blue-cloud-tablet-necklace-3.jpeg'
     ],
     short: 'A rectangular pendant with nine soft blue stones and a brilliant zircon border.',
-    story: 'The grid structure references order and calm, while the ice-blue stones bring a modern interpretation of watery oriental light.',
+    story: 'Society loves to frame your life into neat little boxes. The Stepping Stones necklace is an answer to that pressure: You are not trapped by the box; you are the masterpiece inside it.',
     specs: {
       material: 'Silver alloy, zircon, blue cabochon stones',
       color: 'Silver white and ice blue',
@@ -196,7 +197,7 @@ export const products: Product[] = [
       '/images/products/earth-clover-necklace-3.jpeg'
     ],
     short: 'A four-petal green jade-inspired pendant with a sparkling centre zircon.',
-    story: 'The clover form carries a universal symbol of luck, while the jade-green tone grounds the design in Chinese cultural warmth.',
+    story: 'Sculpted from four cabochons of sage-green Jade—the color of new leaves catching the dawn. It carries the raw, soothing energy of the earth, centered by a single sparkling spark.',
     specs: {
       material: 'Eco-friendly silver alloy, zircon, simulated green jade',
       color: 'Silver white and soft jade green',
@@ -229,7 +230,9 @@ export const products: Product[] = [
       '/images/products/green-gourd-jade-necklace-3.jpeg'
     ],
     short: 'A sculptural gourd-shaped pendant with deep green jade tone and refined zircon sparkle.',
-    story: 'The gourd is a traditional symbol of blessing and protection, redesigned here as a modern pendant for global women.',
+    story: 'You are not a vessel to be filled by society`s standards. You are the river that carves its own valley. The Infinite Becoming necklace celebrates the beauty of a woman who refuses to be finished.
+
+',
     specs: {
       material: 'Eco-friendly silver alloy, zircon, simulated green jade',
       color: 'Silver white and deep jade green',
