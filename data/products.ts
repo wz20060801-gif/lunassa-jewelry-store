@@ -232,9 +232,8 @@ export const products: Product[] = [
       '/images/products/green-gourd-jade-necklace-3.jpeg'
     ],
     short: 'A sculptural gourd-shaped pendant with deep green jade tone and refined zircon sparkle.',
-    story: 'You are not a vessel to be filled by society`s standards. You are the river that carves its own valley. The Infinite Becoming necklace celebrates the beauty of a woman who refuses to be finished.
+   story: "You are not a vessel to be filled by society's standards. You are the river that carves its own valley. The Infinite Becoming necklace celebrates the beauty of a woman who refuses to be finished.",
 
-',
     specs: {
       material: 'Eco-friendly silver alloy, zircon, simulated green jade',
       color: 'Silver white and deep jade green',
