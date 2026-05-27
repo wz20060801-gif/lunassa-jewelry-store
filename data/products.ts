@@ -96,8 +96,9 @@ export const products: Product[] = [
     label: 'New',
     imageTone: 'silver',
 images: [
-  '/images/products/azure-halo-bracelet-1.jpeg',
-  '/images/products/azure-halo-bracelet-2.jpeg'
+  '/images/azure-halo-bracelet-6.jpeg',
+  '/images/azure-halo-bracelet-7.jpeg',
+  '/images/azure-halo-bracelet-8.jpeg'
 ],
     short: 'A luminous blue centre stone framed by sparkling zircon, created for refined everyday elegance.',
     story: 'You don`t need to borrow anyone else`s light. Designed to sit right above your heart, the Ocean Heartbeat necklace is a visual rebellion against self-doubt and the pressure to perform.',
