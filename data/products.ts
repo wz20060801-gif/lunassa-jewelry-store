@@ -96,8 +96,8 @@ export const products: Product[] = [
     label: 'New',
     imageTone: 'silver',
 images: [
-  '/images/azure-halo-bracelet-1.jpeg',
-  '/images/azure-halo-bracelet-2.jpeg'
+  '/images/products/azure-halo-bracelet-1.jpeg',
+  '/images/products/azure-halo-bracelet-2.jpeg'
 ],
     short: 'A luminous blue centre stone framed by sparkling zircon, created for refined everyday elegance.',
     story: 'You don`t need to borrow anyone else`s light. Designed to sit right above your heart, the Ocean Heartbeat necklace is a visual rebellion against self-doubt and the pressure to perform.',
@@ -129,8 +129,8 @@ images: [
     label: 'New',
     imageTone: 'silver',
     images: [
-  '/images/azure-halo-bracelet-3.jpeg',
-  '/images/azure-halo-bracelet-4.jpeg'
+  '/images/products/azure-halo-bracelet-3.jpeg',
+  '/images/products/azure-halo-bracelet-4.jpeg'
 ],
     short: 'An oval blue stone bracelet with delicate zircon links and a graceful polished finish.',
     story: 'In a world that never stops talking, your silence can do the screaming.The Serene Tide bracelet is a love letter to the woman who has a storm of ambition inside her, but chooses to hold it in a nest of calm.',
