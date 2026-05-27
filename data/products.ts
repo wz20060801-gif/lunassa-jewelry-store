@@ -128,9 +128,9 @@ images: [
     reviewCount: 126,
     label: 'New',
     imageTone: 'silver',
-    images: [
-  '/images/products/azure-halo-bracelet-3.jpeg',
-  '/images/products/azure-halo-bracelet-4.jpeg'
+   images: [
+  '/images/azure-halo-bracelet-3.jpeg',
+  '/images/azure-halo-bracelet-4.jpeg'
 ],
     short: 'An oval blue stone bracelet with delicate zircon links and a graceful polished finish.',
     story: 'In a world that never stops talking, your silence can do the screaming.The Serene Tide bracelet is a love letter to the woman who has a storm of ambition inside her, but chooses to hold it in a nest of calm.',
